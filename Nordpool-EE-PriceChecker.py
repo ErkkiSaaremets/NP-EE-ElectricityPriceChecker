@@ -12,10 +12,10 @@ page = requests.get('https://www.nordpoolgroup.com/api/marketdata/page/48?curren
 # print(page.json())
 x = page.json()
 
-
+#remove trash from a pile of dicts and lists to get interesting data. 
 x = x.get("data")
 x = x.get("Rows")
-for row in range(len(x)):
+for row in range(len(x)): # this can be just x[0] to get latest info
     # print(x[o])
     a = x[row]
     date = a["Name"]
