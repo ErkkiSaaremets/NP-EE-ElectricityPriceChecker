@@ -14,7 +14,7 @@ page = requests.get('https://www.nordpoolgroup.com/api/marketdata/page/48?curren
 # print(page.json())
 x = page.json()
 
-#remove trash from a pile of dicts and lists to get interesting data. 
+#filter out interesting data from a pile of dicts and lists. 
 x = x.get("data")
 x = x.get("Rows")
 for row in range(len(x)): # remove the loop and x[0] is latest info
