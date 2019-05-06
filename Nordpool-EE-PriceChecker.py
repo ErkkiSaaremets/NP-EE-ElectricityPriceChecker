@@ -4,6 +4,7 @@
 # It should show current hourly electricity price in cents on a small external LED/LCD display.
 # And warn (red font when price rises up compared to last 2-3) and 
 # write the historical data to the database and draw a pretty graph which can be viewed over www.
+# This was practice URL (daily instead of current hourly) to see how hard is it to extract data. 
 
 import requests
 
